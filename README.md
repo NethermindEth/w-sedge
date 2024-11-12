@@ -26,11 +26,12 @@ sedge cli
 ```
 and go through the process with the interactive mode or execute commands:
 ```
-sedge generate -n holesky c prysm -n nethermind --latest
+sedge generate full-node --latest -n holesky -c prysm -e nethermind
+sedge run
 ```
 
 ## Running a Validator
-(Optional) if you set a very new validator you can generate keys like this:
+(Optional) if you want to set up a new validator and do not have keys you can generate them like this:
 ```
 sedge keys
 ```
@@ -44,7 +45,7 @@ sedge import-key prysm
 ## Running Monitoring Stack
 (Optional) You can set up monitoring stack to your node by using:
 ```
-sedge monitoring init deafult
+sedge monitoring init default
 ```
 
 ## Running Sedge with Lido CSM
