@@ -48,8 +48,6 @@ sedge import-key prysm
 sedge monitoring init default
 ```
 
-## Running Sedge with Lido CSM
-
 ## Running Sedge on OP
 To run OP-mainnet node use below command (replacing placeholder for L1 components urls):
 ```
