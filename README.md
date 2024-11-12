@@ -51,11 +51,15 @@ sedge monitoring init default
 ## Running Sedge with Lido CSM
 
 ## Running Sedge on OP
+To run OP-mainnet node use below command (replacing placeholder for L1 components urls):
 ```
 sedge generate op-full-node -n mainnet --execution-api-url URL_TO_EL_L1_RPC --consensus-url URL_TO_CL_L1_API
 ```
 
+Running it without `--execution-api-url` and `--consensus-url` will create also L1 node to connect to it.
+
 ## Running Sedge on Base
+Similar to OP mainnet base can be generated in the same way using `--base` param:
 ```
 sedge generate op-full-node -n mainnet --base --execution-api-url URL_TO_EL_L1_RPC --consensus-url URL_TO_CL_L1_API
 ```
